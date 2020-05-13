@@ -1,0 +1,5 @@
+# spine-code
+
+This repository contains the P4 code that implements SPINE. basic.p4 is P4 implementation for SPINE border routers, and controller.py acts as the central controller and installs table rules. topology.json contains our testing topology. switch.p4 is a P4 implementation for an unmodified switch that can forward IPv4 and IPv6 traffic (i.e., it can model a switch in the untrusted entity). To run this code, use the command "make run," which creates a Mininet instance described by the testing topology. Then open a separate terminal and run "python controller.py" to install the table rules.
+
+The four files mentioned above and the Makefile rely heavily on the P4 tutorials found at https://github.com/p4lang/tutorials in terms of structure and basic setup. All of other files in this repository, meaning the ones in the utils folder, are directly copied from these P4 tutorials; we simply reproduce them here for convenience (i.e., you can clone this repository and should be able to compile the code directly).

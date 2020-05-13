@@ -1,5 +1,9 @@
 # p4privacy
 
-MIMIQ orginal link: https://github.com/ygovil1/mimiq
+MIMIQ: developed by Yashodhar Govil
+Original repo link: https://github.com/ygovil1/mimiq
 
-SPINE orginal link: https://github.com/SPINE-P4/spine-code
+SPINE: developed by Trisha Datta
+Original repo link: https://github.com/SPINE-P4/spine-code
+
+PINOT: coming soon

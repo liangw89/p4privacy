@@ -1,0 +1,54 @@
+Setup at start:
+0. Download Chromium source code
+    https://chromium.googlesource.com/chromium/src/+/master/docs/linux/build_instructions.md 
+
+1. Move code from the /chromium directory in this repo to the correct location in the chromium source code
+    README file in /chromium will help you with this
+
+2. Build chromium source code to the out/Debug folder
+    Look at the following sites for help
+    https://www.chromium.org/quic/playing-with-quic
+    https://chromium.googlesource.com/chromium/src/+/master/docs/linux/build_instructions.md 
+
+3. Modify start_client.sh and start_server.sh with install location (if needed)
+
+4. Install the ISC DHCP server
+    sudo apt install isc-dhcp-server
+
+5. Copy dhcpd.conf file from this directory to /etc/dhcp/dhcpd.conf
+
+6. Optional - Install the ISC DHCP client
+
+-------------------------------------------------------------------------------
+
+DHCP Daemon config can be found at:
+/etc/dhcp/dhcpd.conf
+
+DHCP Client config can be found at:
+/etc/dhcp/dhclient.conf
+
+-------------------------------------------------------------------------------
+
+To run the setup, start the mininet emulation with the custom topology
+Assuming you're in the mimiq directory, run
+
+sudo mn --custom ./mininet/DHCP_Topo.py --topo mytopo
+
+Within the mininet CLI, run the following commands, in order:
+
+# Start the DHCP server 
+# If there is already a DHCP server running, this script will prompt you to kill it and restart the server
+# This makes it easier to restart the DHCP server if you've changed the config logs
+dhcp sh start_dhcpd.sh
+
+# Start the QUIC server on the server
+serv sh start_server.sh
+
+# Start the QUIC client on the host
+host sh start_client.sh
+
+# (Optional) Start the QUIC client on other hosts
+host2 sh start_client.sh
+host3 sh start_client.sh
+host4 sh start_client.sh
+host5 sh start_client.sh
