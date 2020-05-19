@@ -6,4 +6,4 @@ Original repo link: https://github.com/ygovil1/mimiq
 SPINE: developed by Trisha Datta  
 Original repo link: https://github.com/SPINE-P4/spine-code
 
-PINOT: coming soon
+PINOT: check the README in the pinot directory
