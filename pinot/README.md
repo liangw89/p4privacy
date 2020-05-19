@@ -8,7 +8,7 @@
 3. Run the software model: ./run_tofino_model.sh -p pinot64
 4. Run the software switch: ./run_switchd.sh -p pinot64
 5. Run the controller: python ctrpinot64.py. The ip4to6.json file and the ctr script should be in the same directory.
-6. Run pinot_server.py and then pinot_client.py. The server will print out the received (encrypted) IPs, ports, and UDP checksums. The client will print out the decrypted IPs, ports, and IP and UDP checksums. 
-
+6. Run pinot_server.py and then pinot_client.py. The server will print out the received (encrypted) IPs, ports, and UDP checksums. The client will print out the decrypted IPs, ports, and IP and UDP checksums.  
+(bitshuffle.py: generate the code for permutation)
 
 ##### Todo: add copyright
