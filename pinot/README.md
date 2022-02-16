@@ -1,6 +1,6 @@
 ## PINOT
 
-##### Paper link: Wang, Liang, Hyojoon Kim, Prateek Mittal, and Jennifer Rexford. "Programmable in-network obfuscation of DNS traffic." In NDSS: DNS Privacy Workshop. 2021 https://dnsprivacy.org/attachments/48529419/52756560.pdf
+##### Paper link: Wang, Liang, et al. "Programmable in-network obfuscation of DNS traffic." NDSS: DNS Privacy Workshop. 2021.  https://dnsprivacy.org/attachments/48529419/52756560.pdf
 
 ##### Python dependency: scapy, csiphash, netifaces, ipaddress
 ##### SDE: 8.9.1 (you need to run SDE 8.9.1 in a VM to use the test client/server)
